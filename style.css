@@ -1,0 +1,272 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    margin:0;
+    padding: 0;
+}
+.navbar__container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    padding:2vh 5vw 2vh 5vw;
+    position: fixed;
+    width: 90vw;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.navbar__container nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar__container nav ul li{
+    list-style: none;
+    margin-left: 5vw;
+}
+.navbar__container nav ul li a, .navbar__container p a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar__container nav ul li a:hover, .navbar__container p a:hover{
+    background-color: black;
+    color:white;
+    padding: 0.3rem;
+}
+
+.website__container
+{
+    padding-top: 8vh;
+}
+.website-cover
+{
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.website-cover h1
+{
+    font-weight: 900;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.website-cover h2
+{
+    font-weight: 100;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.website-Projects, .website-aboutMe
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(23, 26, 17);
+    color:white;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+.website-Projects-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    width: 80vh;
+}
+
+.website-Projects-container p {
+    font-family: 'Dancing Script';
+    font-size: 2rem;
+}
+
+.website-Projects-description
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.website-Projects-description p
+{
+    font-family: 'Dancing Script';
+}
+.website-aboutMe-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.website-aboutMe-description
+{
+    width: 40vw;
+}
+
+.website-aboutMe-description-title
+{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.website-aboutMe-description-text {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+
+.website-aboutMe-container img
+{
+    width: 40vw;
+    margin-left: 5vw;
+    max-height: 80vh;
+}
+.website-contact
+{
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.website-contact-info
+{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.website-contact-info h1
+{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.website-contact-info p
+{
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Dancing Script';
+}
+.website-contact-icon
+{
+    display: flex;
+    flex-direction: row;
+
+}
+.website-contact-icon a:hover
+{
+    transform: scale(1.2);
+
+}
+.website-contact-icon a img
+{
+    width: 50px;
+    margin-left: 5vw;
+
+}
+@media Screen and (max-width:720px) {
+
+    .navbar__container p{
+        display: none;
+        visibility: hidden;
+    }
+
+    .website-Projects-container{
+        width: 40vh;
+    }
+    .website-Projects-container p {
+        font-size: 1rem;
+    }
+    .website-aboutMe-description-title
+    {
+        font-size: 3rem;
+    }
+
+    .website-aboutMe-description-text {
+        font-size: 1rem;
+    }
+    .website-contact-info h1
+    {
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+@media Screen and (max-width:370px) {
+
+    .website-cover h1
+    {
+        font-size: 3rem;
+    }
+    .website-cover h2
+    {
+        font-size: 3rem;
+    }    
+    .website-Projects-container{
+        width: 30vh;
+    }
+    .website-Projects-container p {
+        font-size: 1rem;
+    }
+    .website-aboutMe-container
+    {
+        flex-direction: column;
+    }
+    .website-aboutMe-description
+    {
+        width: 80vw;
+    }
+    .website-aboutMe-description-text {
+        font-size: 01rem;
+    }
+    .website-contact-info h1
+    {
+        font-size: 1rem;
+    }
+    .website-contact-icon a img
+    {
+        width: 30px;
+        margin-left: 5vw;
+    
+    }
+
+}
+@media Screen and (max-width:270px) {
+
+    .website-cover h1
+    {
+        font-size: 2rem;
+    }
+    .website-cover h2
+    {
+        font-size: 2rem;
+    }   
+    .website-Projects-container{
+        width: 20vh;
+    }
+    .website-Projects-container p {
+        font-size: 0.5rem;
+    }
+
+    .website-aboutMe-description-text {
+        font-size: 0.5rem;
+    }
+    .website-contact-info h1
+    {
+        font-size: 0.8rem;
+    }
+    .website-contact-icon a img
+    {
+        width: 20px;
+        margin-left: 5vw;
+    
+    }
+}
